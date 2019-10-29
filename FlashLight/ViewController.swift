@@ -13,24 +13,31 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        view.backgroundColor = .clear
     }
 
+     
     
      @IBOutlet weak var onOFFLabel: UILabel!
 
     @IBAction func lightOn(_ sender: UISwitch) {
         
        
+       
         
-        switch sender.isOn {
-        case true:
-            view.backgroundColor = .white
-            onOFFLabel.text = "ON"
-            onOFFLabel.textColor = .black
-        case false:
-            view.backgroundColor = .black
-            onOFFLabel.textColor = .white
-        }
+        
+        
+        // MARK: My CODE
+//        switch sender.isOn {
+//        case true:
+//            view.backgroundColor = .white
+//            onOFFLabel.text = "ON"
+//            onOFFLabel.textColor = .black
+//        case false:
+//            view.backgroundColor = .black
+//            onOFFLabel.textColor = .white
+//        }
 
         
         }
